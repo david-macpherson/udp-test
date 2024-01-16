@@ -74,7 +74,7 @@ func main() {
 			module.DefaultBinDir,
 			buildOptions,
 			module.BuildMatrix{
-				Platforms:     []string{"linux"},
+				Platforms:     []string{"linux", "windows"},
 				Architectures: []string{"amd64"},
 				Ignore:        []string{},
 			},
