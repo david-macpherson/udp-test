@@ -14,6 +14,8 @@ func main() {
 
 	flag.Parse()
 
+	fmt.Printf("Sending address: %s:%v\n", *ip, *port)
+
 	p := make([]byte, 2048)
 	conn, err := net.Dial("udp", fmt.Sprintf("%s:%v", *ip, *port))
 	if err != nil {

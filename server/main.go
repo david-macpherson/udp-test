@@ -20,6 +20,8 @@ func main() {
 
 	flag.Parse()
 
+	fmt.Printf("Sending address: %s:%v\n", *ip, *port)
+
 	p := make([]byte, 2048)
 	addr := net.UDPAddr{
 		Port: *port,
